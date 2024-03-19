@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
+import {Component, NgModule} from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-principal',
   standalone: true,
-  imports: [],
   templateUrl: './principal.component.html',
-  styleUrl: './principal.component.css'
+  styleUrls: ['./principal.component.css'],
+  imports: [CommonModule]
 })
+
 export class PrincipalComponent {
+
+  //variavel para a visibilidade dos botões
+  btnCadastro:boolean = true;
 
 }
