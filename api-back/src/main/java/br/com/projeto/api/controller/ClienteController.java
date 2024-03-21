@@ -24,7 +24,7 @@ public class ClienteController {
     public Cliente cadastrar(@RequestBody Cliente dadosCliente){
         return clienteService.save(dadosCliente);
     }
-    @GetMapping("/")
+    @GetMapping("/listar")
     public List<Cliente> obterClientes() {
         return clienteService.listarClientes();
     }
